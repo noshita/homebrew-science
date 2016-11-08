@@ -49,6 +49,7 @@ class Pcl < Formula
   depends_on "openni" => :optional
   depends_on "openni2" => :optional
 
+  depends_on "XML::Parser" => :perl
 
   def install
     args = std_cmake_args + %W[
